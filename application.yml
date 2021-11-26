@@ -1,6 +1,10 @@
 test:
   message: CIAO MONDO
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 eureka:
   instance:
     hostname: localhost
