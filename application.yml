@@ -1,0 +1,17 @@
+test:
+  message: CIAO MONDO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:9902/eureka
