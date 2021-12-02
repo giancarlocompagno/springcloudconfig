@@ -7,11 +7,11 @@ management:
         include: "*"
 eureka:
   instance:
-    hostname: localhost
+    hostname: configuration
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      default-zone: http://localhost:8762/eureka
+      default-zone: http://discovery:8762/eureka
     serviceUrl:
-      defaultZone: http://localhost:8762/eureka
+      defaultZone: http://discovery:8762/eureka
